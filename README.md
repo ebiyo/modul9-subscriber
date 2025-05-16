@@ -14,3 +14,7 @@ AMQP (Advanced Message Queuing Protocol) adalah protokol messaging yang digunaka
 * guest kedua => password (defaultnya juga guest)
 * localhost => alamat host AMQP, localhost berarti servernya di mesin yang sama
 * 5672 => port number yang digunakan AMQP (RabbitMQ secara default listen ke port 5672)
+
+### > Mensimulasikan subscriber lambat
+![Chart simulasi subscriber lambat](image-1.png)
+Alasan mengapa total queue di mesin saya 10 adalah mungkin karena saya kurang cepat menjalankan ```cargo run``` sehingga beberapa message dari ```cargo run``` sebelumnya sudah diproses dan queue yang terbentuk tidak besar.
